@@ -1,3 +1,89 @@
 body {
   background: peachpuff;
 }
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.a{
+background-color: blue;
+  grid-column:span 3 ;
+  height: 100px;
+
+}
+.b{
+background-color: red;
+height: 100px;
+}
+.c{
+background-color: blue;
+height: 100px;
+}
+.d{
+background-color: red;
+height: 100px;
+}
+.e{
+background-color: blue;
+height: 100px;
+}
+.f{
+background-color: red;
+height: 100px;
+}
+.g{
+background-color: blue;
+height: 100px;
+}
+.h{
+background-color: red;
+grid-column: span 3;
+height: 300px;
+
+}
+
+@media (min-width:400px){
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .a{
+  background-color: blue;
+    grid-column:span 4 ;
+    height: 100px;
+  }
+  .b{
+  background-color: red;
+  height: 100px;
+  }
+  .c{
+  background-color: blue;
+  height: 100px;
+  }
+  .d{
+  background-color: red;
+  height: 100px;
+  }
+  .e{
+  background-color: blue;
+  height: 100px;
+  }
+  .f{
+  background-color: red;
+  height: 100px;
+  }
+  .g{
+  background-color: blue;
+  height: 100px;
+  }
+  .h{
+  background-color: red;
+  height: 224px;
+  grid-column: 4 / span 1;
+  grid-row: second-line / span 2;
+  }
+}
