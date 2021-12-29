@@ -16,22 +16,22 @@ body {
 }
 .b{
   background-color: blue;
-  height: 600px;
+  height: 300px;
   flex-basis: 100%;
 }
 .c{
   background-color: blueviolet;
-  width: 30%;
+  width:25%;
   height: 150px;
 }
 .d{
   background-color: brown;
-  width: 30%;
+  width:25%;
   height: 150px;
 }
 .e{
 background-color: chartreuse;
-width: 30%;
+width:25%;
 height: 150px;
 }
 .f{
@@ -41,10 +41,45 @@ height: 150px;
 }
 
 @media (min-width:400px){
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .a{
+    grid-column-start: span 4;
+    background-color: lawngreen;
+    height: 150px;
+    border: solid black 1px;
+  }
+  .b{
+    background-color: blue;
+    height: 200px;
+    grid-column-start: span 3;
+  }
+  .c{
+    background-color: blueviolet;
+    height: 200px;
+    justify-self: stretch;
+    width: 200px;
+    
+  }
+  .d{
+    background-color: brown;
+    height: 200px;
+    justify-self: stretch;
+    width: 200px;
+  }
+  .e{
+  background-color: chartreuse;
+  height: 200px;
+  justify-self: stretch;
+  width: 200px;
+  }
   .f{
-    flex-direction: column-reverse;
-    flex-basis: 25%;
-    align-self: flex-end;
+  background-color: cornflowerblue;
+  grid-column: 4 / span 1;
+  height: 600px;
+  grid-row: second-line / span 2;
   }
 
 }
